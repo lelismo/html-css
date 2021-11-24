@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'dumont';
+    src: url('../fontes/DumontDisplaySemiBold-hinted.ttf');
+}
+@font-face {
+    font-family: 'brasilero';
+    src: url('../fontes/Brasilero2018Free.otf');
+}
+:root {
+    --cor0: #1CD7E6;
+    --cor1: #E6C805;
+    --cor2: #99881F;
+    --cor3: #038E99;
+    --cor4: #E6329D;
+    --fonte-principal: 'dumont';
+    --fonte-secundaria: 'brasilero';
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--cor3);
+    font-family: var(--fonte-secundaria);
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    min-height: 60px;
+    text-align: center;
+    padding-top: 40px;
+}
+header h1 {
+    color:var(--cor3);
+}
+header p {
+    color: transparent;
+}
+header p:hover {
+    color: var(--cor0);
+}
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: black;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
+main {
+    background-color: #1CD7E6;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h2 {
+    color: var(--cor1);
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+}
+.video {
+    text-align: center;
+}
+.lista {
+    padding: 10px;
+    list-style-position: inside;
+    columns: 2;
+    text-align: left;
+}
+main p {
+    margin: 15px 0px 15px 0px;
+    /*line-height: 1em;*/
+    font-size: 1em;
+    text-align: center;
+}
+main a {
+    color: black;
+    text-decoration: line-through;
+}
+main a:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border-radius: 5px;
+}
+main a:active {
+    color: black;
+}
+main strong:hover {
+    border-radius: 5px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+main img {
+    border-radius: 50%;
+}
+main abbr {
+    text-decoration: none;
+}
+li img {
+    margin-right: 5px;
+}
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 5px;
+}
+footer a {
+    color: black;
+    text-decoration: line-through;
+    flex: 1 0 auto;
+}
+footer a:active {
+    color: black;
+}
+footer a:hover {
+    border-radius: 5px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
