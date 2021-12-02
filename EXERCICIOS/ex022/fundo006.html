@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;  
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* shorthand - background
+            color > image > position > repeat >  [size] > attachment
+            --- size esta na regra mas não funciona na shorthand ---
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -31,6 +41,9 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, perferendis. Quis ipsum labore esse mollitia tenetur quos quas, ducimus neque dolores earum doloremque natus assumenda. Dolorum sed hic earum facere?
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam dolores voluptas at eligendi! Officia facilis, quasi id corrupti, maxime laboriosam quis nulla repellendus totam hic, fugit illum quidem fuga aliquid?
         </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita rem officia in quae deserunt odio aperiam dolorem totam, maxime at minima! Optio excepturi maxime repudiandae consequuntur dolor, eligendi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita odit incidunt fugiat vero vel laboriosam tenetur aut! Culpa dolores non impedit doloribus vel voluptatem aperiam maxime incidunt inventore quae.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ad vitae ratione velit quis saepe reprehenderit blanditiis sunt. Ab fugiat facere vel molestias dolore ex dolores. Consequatur amet beatae suscipit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut aut repellat facere laudantium dicta cum, quasi itaque ea, pariatur excepturi illo? Facere delectus in eveniet, aperiam odit exercitationem earum veritatis?</p>
     </main>
 </body>
 </html>
