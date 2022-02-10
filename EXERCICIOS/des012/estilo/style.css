@@ -50,10 +50,23 @@ section.normal {
 section.imagem {
     background-color: gray;
     color: white;
+    background-attachment: fixed;
 }
 
 section p {
     padding: 10px;
+}
+
+section#img01 {
+    background-image: url('../imagens/sharon1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/sharon2.png');
+    background-position: center;
+    background-size: cover;
 }
 
 footer {
